@@ -1,0 +1,22 @@
+public class Persona {
+    private String nombre;
+    private String apellido;
+    
+    private static Persona person;
+    
+    private Persona(String nombre, String apellido){
+        this.nombre=nombre;
+        this.apellido=apellido;
+        System.out.println("Mi nombre es: "+nombre+apellido);
+    }
+    
+    public static Persona getInstance(String nombre, String apellido){
+        if(person==null){
+            person = new Persona(nombre,apellido);
+        }else{
+            System.out.println("Una persona ya ha sido creada");
+        }
+    return person;
+        
+    }
+}
