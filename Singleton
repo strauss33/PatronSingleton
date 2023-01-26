@@ -1,0 +1,8 @@
+public class Singleton {
+
+    public static void main(String[] args) {
+        Persona per1 = Persona.getInstance("pedro","gonzalez");
+        Persona per2= Persona.getInstance("martin","perez");
+    }
+    
+}
